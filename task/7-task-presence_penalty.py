@@ -10,9 +10,11 @@ from task.app.main import run
 
 run(
     deployment_name='gpt-4o',
+    print_request=False,
     print_only_content=True,
     # TODO:
     #  Use `presence_penalty` parameter with different range (-2.0 to 2.0)
+    presence_penalty=1.0
 )
 
 # In the final result, we can see that the higher `presence_penalty` (2.0) the more LLM is trying to add topics that

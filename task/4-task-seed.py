@@ -10,9 +10,13 @@ from task.app.main import run
 
 run(
     deployment_name='gpt-4o',
+    print_request=False,
+    print_only_content=True,
     # TODO:
     #  1. Use `seed` parameter with value 42 (or whatever you want)
     #  2. Use `n` parameter with value 5
+    seed=42,
+    n=5
 )
 
 # Check the content in choices. The expected result is that in almost all choices the result will be the same.
